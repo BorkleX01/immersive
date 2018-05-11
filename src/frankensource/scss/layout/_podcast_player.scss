@@ -1,0 +1,211 @@
+.podcast-wrapper{
+    height: 550px;
+    width: 230px;
+    margin-top: 80px;
+    margin-left: 35px;
+    position: relative;
+    top:0;
+    @include media('<=screen-sm') {
+	    height: auto;
+	    width: 90%;
+	    margin: 10px auto;
+	    #on-top{
+	    	max-width:60%;
+	    	display: block;
+	    	margin:0 auto;
+	    }
+	    .control-wrap{
+	    	max-width:230px;
+	    	margin:0 auto;
+	    	img{
+	    		max-width:none;
+	    	}
+	    }
+	}
+
+	> small > * {
+		line-height: 1.5;
+	}
+	.next-prev{
+		display: block;
+		height:20px;
+		width:20px;
+		margin-top: 20px;
+	    transition: transform 0.3s ease-in-out;
+	    cursor: pointer;
+	    display: none; // temp?
+	    &:hover{
+	    	transform: scale(1.1, 1.1);
+	    }
+		&.next{
+		    float: left;
+		    margin-left: 20px;
+		}
+		&.prev{
+			float:right;
+			margin-right:20px;
+		}
+	}
+	.play-pause{
+	    text-align: center;
+	    margin:0 auto;
+	    transition: transform 0.3s ease-in-out;
+	    cursor: pointer;
+	    display: block;
+	    border: 0;
+	    background-color: transparent;
+	    box-shadow: none;
+	    img {
+	    	height: 70px;
+		    width: 70px;
+	    }
+	    &:hover,
+	    &:focus{
+	    	transform: scale(1.11, 1.11);
+	    }
+	}
+	.elapsed-remaining{
+		span{
+		display: block;
+	    float: left;
+	    color: rgba(0,0,0,0.2);
+	    font-family: $font-family-sans-serif;
+	    font-size: 12px;
+	    line-height: 1rem;
+			&.remaining{
+				float:right;
+			}
+		}
+	}
+	h4{
+		clear: both;
+	    text-align: center;
+	    width: 100%;
+	    padding-top: 15px;	
+	    margin-bottom:22px;
+	}
+	.volume-block{
+		clear:both;
+		margin-top: 30px;
+		height: 40px;
+		display: flex;
+		@include media('<=screen-sm') {
+			display:none;
+		}
+		.sound{
+			height:15px;
+			width:15px;
+			&.full{
+				float: right;
+				margin-left:10px;
+				margin-top: 3px;
+			}
+			&.no-sound{
+				float:left;
+				margin-right:10px;
+				margin-top: 3px;
+			}
+		}
+
+		.volume {
+			flex-grow: 1;
+			flex-shrink: 0;
+		}
+	}
+	.btn-primary{
+		font-size: 16px!important;
+	    display: block;
+	    margin: 0 auto;
+	   	@include media('<=screen-sm') {
+	   		margin:20px auto;
+	   		width: 90%;
+	   	}
+	}
+}
+
+
+
+/**
+* Rangeslider
+*/
+.rangeslider {
+	position: relative;
+	-ms-touch-action: none;
+	touch-action: none;
+	height:20px;
+	@include media('<=screen-sm') {
+		margin: 13px 0 5px 0;
+	}
+	&:before{
+		background-color: #d8d6d7;
+		height:2px;
+		content: '';
+		display:block;
+		position: absolute;
+		top:9px;
+		left:0;
+		width: 100%;
+	}
+	&, .rangeslider__fill {
+		display: block;
+	}
+	.rangeslider__handle {
+		cursor: pointer;
+		display: inline-block;
+		position: absolute;
+	}
+}
+/**
+* Rangeslider - Horizontal slider
+*/
+.rangeslider-horizontal {
+	.rangeslider__fill {
+		height: 4px;
+		background-color: #e60707;
+		position: absolute;
+		top: 8px; 
+	}
+	.rangeslider__handle {
+		width: 10px;
+		height: 20px;
+		margin-left: -5px;
+		top: 0;
+		&:after {
+			content: '';
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			border-radius: 5px;
+			top: 5px;
+			left: 0;
+			background-color: #e60707;
+		}
+		transition: transform 0.3s ease-in-out;
+		cursor: pointer;
+		&:hover{
+			transform: scale(1.1, 1.1);
+		}
+	}
+}
+
+.volume {
+	.rangeslider__fill {
+		background-color: darken(#d8d6d7,10%);
+		height: 2px;
+		top: 9px;
+	}
+
+	.rangeslider__handle {
+		width: 16px;
+		height: 20px;
+		margin-left: -8px;
+		&:after {
+			background-color: white;
+			width: 16px;
+			height: 16px;
+			top: 2px;
+			border-radius: 8px;
+			border: 1px solid #d8d6d7;
+		}
+	}
+}

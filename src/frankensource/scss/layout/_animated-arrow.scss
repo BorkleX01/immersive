@@ -1,0 +1,26 @@
+.downArrow{
+    position: absolute;
+    bottom: 6px;
+    right: 7px;
+    color:#fff;
+}
+.bounce {
+	-moz-animation: bounce 1.5s infinite;
+	-webkit-animation: bounce 1.5s infinite;
+	animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    -moz-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+  }
+  50% {
+    -moz-transform: translateY(-8px);
+    -ms-transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}

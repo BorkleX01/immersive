@@ -1,0 +1,83 @@
+$blockdistance: 15px;
+.quote{
+	border-top:1px solid currentColor;
+	border-bottom:1px solid currentColor;
+	//quotes: '\201c' '\201d';
+	text-align: center;
+	/*&:before { 
+		content: open-quote; 
+	}
+	&:after  { 
+		content: close-quote; 
+	}*/
+	/* there must be a better wat to do this? a function? */
+	&.pull-across-1{
+		margin-left:-5%;
+	    padding-top: $blockdistance;
+	    padding-bottom: $blockdistance;
+	    margin-top: $blockdistance;
+	    margin-right: ($blockdistance * 2);
+	}
+	&.pull-across-2{
+		margin-left:-10%;
+	    padding-top: ($blockdistance * 1.5);
+	    padding-bottom: ($blockdistance * 1.5);
+	    margin-top: ($blockdistance * 1.5);
+	    margin-right: ($blockdistance * 3);
+	}
+	&.pull-across-3{
+		margin-left:-15%;
+	    padding-top: ($blockdistance * 1.5);
+	    padding-bottom: ($blockdistance * 1.5);
+	    margin-top: ($blockdistance * 1.5);
+	    margin-right: ($blockdistance * 2.5);
+	}
+	&.pull-across-4,
+	&.pull-along-4{
+	    padding-top: ($blockdistance * 2);
+	    padding-bottom: ($blockdistance * 2);
+	    margin-bottom: ($blockdistance * 2);
+	}
+
+	&.pull-along-1{
+		margin-right:-5%;
+	    padding-top: $blockdistance;
+	    padding-bottom: $blockdistance;
+	    margin-top: $blockdistance;
+	    margin-left: ($blockdistance * 2);
+	    float: right;
+	}
+	&.pull-along-2{
+		@include media('>=screen-md') {
+			margin-right:-10%;
+	    	margin-left: ($blockdistance * 3);
+	    	margin-bottom:0;
+		}
+	    padding-top: ($blockdistance * 3);
+	    padding-bottom: ($blockdistance * 3);
+	    margin-top: ($blockdistance * 1);
+	    margin-bottom: ($blockdistance * 3);
+	    float: right;
+		font-size: 27px;
+    	line-height: 43px;
+	    font-weight: 100;
+		@include media('<=screen-sm') {
+		    padding-top: ($blockdistance * 1.5);
+		    padding-bottom: ($blockdistance * 1.5);
+		    margin-top: ($blockdistance * 0.5);
+		    margin-bottom: ($blockdistance * 1.5);
+		    float: right;
+		    font-size: (24px/1.2);
+		    line-height: (56px/1.5);
+		}
+	}
+	&.pull-along-3{
+		margin-right:-15%;
+	    padding-top: ($blockdistance * 1.5);
+	    padding-bottom: ($blockdistance * 1.5);
+	    margin-top: ($blockdistance * 1.5);
+	    margin-left: ($blockdistance * 2.5);
+	    float: right;
+	}
+
+}

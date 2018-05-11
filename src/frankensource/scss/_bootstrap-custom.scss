@@ -1,0 +1,64 @@
+// custom variables and override bootstrap variables
+
+$base: 17;
+$base-sm: 18;
+$white: #fff;
+$gray2: #525a6f;
+$gray-lighter2: #e7ebf0;
+
+$gray-lighter: #d7dbe3;
+$gray-light: #717171;
+$gray: #595959;
+$gray-darker: #0a1633;
+$blue: #192646;
+$gray-dark: #222;
+
+$brand-primary: #003357;
+$brand-primary-hover: #005383;
+
+$font-family-sans-serif: 'PT Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: 'PT Serif', Georgia, "Times New Roman", Times, serif;
+
+$font-size-base: 17px;  
+$font-family-base: $font-family-serif;
+$link-hover-decoration: none; 
+$headings-font-weight: 700;
+
+$screen-md: 1000px;
+$screen-lg:  1020px;
+$grid-gutter-width: 40px;
+$container-large-desktop: (960px + $grid-gutter-width);
+$grid-float-breakpoint-max: 9999px;
+
+$font-size-h1: 28px;
+$font-size-h2: 20px;
+$font-size-h3: 13px; 
+
+$navbar-padding-horizontal:  30px;
+$navbar-padding-vertical:  6px; 
+
+$navbar-default-color: $white;
+$navbar-default-bg: $blue;
+$navbar-default-border: transparent;
+
+$navbar-default-link-color: $white;
+$navbar-default-link-hover-color: $brand-primary;
+$navbar-default-link-active-color: $brand-primary;
+$navbar-default-link-active-bg: transparent;
+
+$dropdown-bg:  transparent;
+$dropdown-border:  transparent;
+$dropdown-link-color: $white;
+$dropdown-link-hover-color: $brand-primary;
+$dropdown-link-hover-bg: transparent;
+$dropdown-link-active-color:$brand-primary;
+$dropdown-link-active-bg: transparent;
+
+$tooltip-max-width: 300px;
+$tooltip-bg: #232323;
+
+$btn-font-weight:                600 !important;
+
+$btn-primary-color:              #fff;
+$btn-primary-bg:                 $brand-primary;
+$btn-primary-border:             transparent;

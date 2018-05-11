@@ -1,0 +1,135 @@
+.outerQuote{
+    position: relative;
+    padding: 0 0 60px 0;
+    @include media('>=screen-md') {
+      margin-top: -50px;    
+      &.true{
+        margin-top:0;
+      }
+    }
+    @include media('<=screen-md') {
+      padding:40px 0;
+      margin-bottom: -1px; // bizare line - don't want to float
+    }
+    @include media('<=screen-sm') {
+      padding: 0 0 20px;
+    }
+    .top-half,.bottom-half{
+      position: absolute;
+      left:0;
+      height:50%;
+      width:100%;
+      display: block;
+    }
+    .top-half{
+      top:0;
+    }
+    .bottom-half{
+      top:50%;
+    }
+    @include media('<=screen-sm') {
+      &.false{ 
+        .top-half{
+          height:45%;
+          margin-top: -1px;
+        }
+        .bottom-half{
+          height:55%;
+          top: 45%; // quote is adjusting the box
+        }
+      }
+    }
+    &.true{
+      .top-half{
+        height:55%;
+        margin-top: -1px;
+      }
+      .bottom-half{
+        height:45%;
+        top: 55%; // quote is adjusting the box
+      }
+    }
+}
+
+  .TwoImageOneQuote{
+    position: relative;
+    width: 100%;
+    float: left;   
+    float: none;
+    margin: 0 auto $grid-gutter-width*0.75;
+    max-width: $screen-lg;
+    @include media('>=screen-sm') {
+      margin: $grid-gutter-width auto $grid-gutter-width*1.5;
+    }
+    @include media('<=screen-md') {
+      margin:0;
+      padding: 0;
+    }
+    img{
+      box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.15);
+    }
+    .first-image{
+      width:50%; 
+      position: absolute;
+      top:0;
+      left:0;
+      img{
+        width: 100%;
+        margin-left: 35px;
+        position: relative;
+        z-index: 1; 
+      }
+      @include media('<=screen-md') {
+        position: relative;
+        width: 100%;
+        img{
+          max-width:500px;
+          display: block;
+          margin:0 auto;
+        }
+      }
+      @include media('<=screen-sm') {
+        img{
+          max-width:90%;
+        }
+      }
+    }
+    .second-image{
+      width: 50%;
+      position: relative;
+      margin-right: 35px;
+      float: right;
+      z-index: 1;
+      &.false{
+        margin-top: 108px;
+      }
+    }
+    .caption{
+      font-size:16px;
+      font-family: $font-family-sans-serif;
+      color: #fff;
+      opacity: 0.75;
+      width: 80%;
+      margin: 0 auto;
+      display: block;
+      line-height: 20px;
+      margin-top: 20px;
+      @include media('<=screen-md') {
+        max-width: 500px;
+        &.top{
+          margin-bottom:20px;
+        }
+      }
+      @include media('<=screen-sm') {
+        max-width: 90%;
+        width: 90%;
+      }
+      @include media('>=screen-md') {
+        &.top{
+          margin-left: 36px;
+          margin-top: -50px; // parralaxy reasons
+          padding: 10px 0 25px 0;
+        }
+      }
+    }
+  }

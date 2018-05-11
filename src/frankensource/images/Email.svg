@@ -1,0 +1,20 @@
+<svg width="32" height="30" viewBox="0 0 32 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Email</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(120 234)">
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M -120 -234L -88 -234L -88 -204L -120 -204L -120 -234Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="Email" clip-path="url(#clip-0)">
+<path d="M -120 -234L -88 -234L -88 -204L -120 -204L -120 -234Z" fill="#FFFFFF"/>
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(-120 -232)" fill="#292929"/>
+<use xlink:href="#path1_fill" transform="translate(-120 -232)" fill="#292929"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 16.53 18.4474L 31.83 3.14739L 31.83 1.37039C 31.83 0.550389 31.01 0.00438841 30.054 0.00438841L 1.776 0.00438841C 1.36395 -0.0254086 0.955326 0.0972992 0.62786 0.349168C 0.300393 0.601036 0.0769369 0.964491 0 1.37039L 0 3.14639L 15.3 18.4464C 15.4774 18.5795 15.6932 18.6514 15.915 18.6514C 16.1368 18.6514 16.3526 18.5795 16.53 18.4464L 16.53 18.4474Z"/>
+<path id="path1_fill" d="M 17.486 20.6324C 17.0938 21.0463 16.5558 21.2913 15.986 21.3154C 15.4162 21.2913 14.8782 21.0463 14.486 20.6324L 0 6.28839L 0 23.6384C 0 24.4584 0.82 25.0044 1.776 25.0044L 30.055 25.0044C 30.467 25.0342 30.8757 24.9115 31.2031 24.6596C 31.5306 24.4077 31.7541 24.0443 31.831 23.6384L 31.831 6.28839L 17.486 20.6324Z"/>
+</defs>
+</svg>

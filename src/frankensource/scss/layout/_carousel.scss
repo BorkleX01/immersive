@@ -1,0 +1,163 @@
+.carousel {
+	position: relative;
+	&.single{
+		// when there is only one slide lets hide the other jazz - otherwise it bugs out
+		.carousel-infinite-left,
+		.carousel-infinite-right,
+		.carousel-controls{
+			display: none!important
+		}
+	}
+	&-inner {
+		position: relative;
+		min-width: 100%;
+		z-index: 1;
+
+		.carousel-slides,
+		.carousel-infinite-left,
+		.carousel-infinite-right {
+			position: relative;
+			white-space: nowrap;
+			overflow: hidden;
+			overflow-x: auto;
+
+			> .carousel-slide {
+				float: left;
+				white-space: normal;
+			}
+		}
+
+		.carousel-infinite {
+			&-left,
+			&-right {
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				transform: translate(-100%,0);
+			}
+
+			&-right {
+				left: auto;
+				right: 0;
+				transform: translate(100%,0);
+			}
+		}
+	}
+
+	&-controls {
+		.carousel-next,
+		.carousel-prev {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			z-index: 3;
+			width: auto;
+
+			button {
+				height: 100%;
+				width: 100%;
+				padding: 0;
+				background-color: transparent;
+				border: 0;
+				box-shadow: none;
+				outline: none;
+				color: white;
+			}
+
+			.icon.prev,
+			.icon.next {
+				width: 30px;
+				height: 30px;
+			}
+
+			@include media('>=screen-sm') {
+				display: block;
+			}
+		}
+
+		.carousel-next {
+			left: auto;
+			right: 0;
+		}
+
+		.carousel-pager {
+			position: absolute;
+			z-index: 2;
+			bottom: -50px;
+			left: 0;
+			right: 0;
+
+			ol {
+				list-style: none;
+				padding: 0;
+				margin: 0 15px;
+				text-align: center;
+				display: block;
+
+				li {
+					padding: 0;
+					margin: 0 5px;
+					width: 30px;
+					height: 30px;
+					display: inline-block;
+					cursor: pointer;
+					position: relative;
+					&:after {
+						content: '';
+						display: block;
+						background-color: $gray-lighter;
+						width: 10px;
+						height: 10px;
+						border-radius: 5px;
+						position: absolute;
+						transition: all 0.2s ease-in-out;
+						top: 10px;
+						left: 10px;
+					}
+					&.activePager {
+						&:after {
+							background-color: $gray-light;
+							width: 14px;
+							height: 14px;
+							border-radius: 7px;
+							top: 8px;
+							left: 8px;
+						}
+					}
+					@include media('<=screen-md') {
+					&.activePager{
+						&:after{
+							width:10px;
+							height:10px;
+						}
+					}
+						margin: 0 4px;
+		    			width: 15px;
+		    			&:after{
+		    				width: 7px;
+    						height: 7px;
+		    			}
+		    		}
+				}
+			}
+		}
+	}
+
+	&.pager {
+		margin-bottom: 70px;
+	}
+
+	&.transitioning {
+		.carousel-inner {
+			transition-property: transform;
+			transition-timing-function: ease-in-out;
+		}
+
+		.carousel-next button,
+		.carousel-prev button {
+			cursor: normal;
+		}
+	}
+}

@@ -1,0 +1,65 @@
+.loading {
+	display: none;
+	opacity: 0;
+	position: relative;
+	z-index: 9999;
+
+	&.show-loading {
+		display: block;
+		transition-delay: 2s;
+		transition: 0.3s opacity linear;
+	}
+
+	&.is-loading {
+		opacity: 1;
+	}
+
+	&-bar {
+		height: 5px;
+		background-color: $brand-primary;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		overflow: hidden;
+		z-index: 2;
+
+		div {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			animation-name: loadingBar;
+			animation-duration: 3s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			background-color: lighten($brand-primary, 20%);
+		}
+	}
+
+	&-overlay {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		background-color: rgba(255,255,255,0.75);
+	}
+}
+
+@keyframes loadingBar {
+	0% {
+		left: 0;
+		width: 0;
+	}
+	50% {
+		left: 50%;
+		width: 55%;
+	}
+	100% {
+		left: 100%;
+		width: 0;
+	}
+}

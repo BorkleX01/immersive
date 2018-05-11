@@ -1,0 +1,29 @@
+/* base reset styles */
+
+body{
+	min-width: 320px;
+	-ms-overflow-style: scrollbar;
+	-webkit-font-smoothing: antialiased;
+	#wrapper{
+		z-index: 1;
+		position: relative;
+	}
+}
+
+.center-block {
+	float: none;
+}
+.clearfix{
+	clear: both;
+}
+a, button, input[type="submit"] {
+	@include transition;
+	outline: none !important;
+}
+.btn, .label, label{
+	white-space: normal;
+}
+input[type="email"]:focus,
+input[type="email"]:active {
+	@include box-shadow(none); 
+}

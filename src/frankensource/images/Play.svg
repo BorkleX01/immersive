@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="343 1951 54.024 54.024">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Play" transform="translate(335 1943)">
+    <path id="Path_2" data-name="Path 2" class="cls-1" d="M139.928,117.414,120.9,126.928V107.9Z" transform="translate(-93.344 -82.402)"/>
+    <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-2" cx="25.012" cy="25.012" r="25.012" transform="translate(10 10)"/>
+  </g>
+</svg>

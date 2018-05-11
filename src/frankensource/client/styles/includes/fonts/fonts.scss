@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Heroic Condensed';
+	src: url('./includes/fonts/HeroicCondensed-Light.eot');
+	src: url('./includes/fonts/HeroicCondensed-Light.eot?#iefix') format('embedded-opentype'),
+		url('./includes/fonts/HeroicCondensed-Light.woff') format('woff'),
+		url('./includes/fonts/HeroicCondensed-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Heroic Condensed';
+	src: url('./includes/fonts/HeroicCondensed-Medium.eot');
+	src: url('./includes/fonts/HeroicCondensed-Medium.eot?#iefix') format('embedded-opentype'),
+		url('./includes/fonts/HeroicCondensed-Medium.woff') format('woff'),
+		url('./includes/fonts/HeroicCondensed-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Heroic Condensed';
+	src: url('./includes/fonts/HeroicCondensed-Bold.eot');
+	src: url('./includes/fonts/HeroicCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+		url('./includes/fonts/HeroicCondensed-Bold.woff') format('woff'),
+		url('./includes/fonts/HeroicCondensed-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}

@@ -1,0 +1,414 @@
+.on-mobile{
+	display: none;
+}
+@media screen and (max-width: 1024px){
+	#underlay{
+		display: none!important;
+	}
+	.home{
+		.BOSS{
+			width:200px;
+		}
+		.ibm-text{
+			width:100px;
+			right: 40px;
+			top:85px;
+		}
+	}
+	#HomeVideo{
+		top:-10%;
+	}
+	header .inside{
+		padding:0 40px;
+	    height: 73px;
+	    line-height: 73px;
+	}
+	.theWrap{
+		padding:40px;
+	}
+	.bm-burger-button{
+		right:40px;
+		top:10px;
+	}
+
+	.arrow-wrap{
+		right: 43px;
+	}
+
+	.slideRight-enter.slideRight-enter-active,
+	.slideLeft-enter.slideLeft-enter-active {
+	  transition: 0.7s transform ease-out!important;
+	}
+
+	.slideRight-leave.slideRight-leave-active,
+	.slideLeft-leave.slideLeft-leave-active { 
+	  transition: 0.7s  transform ease-out!important;
+	}
+
+	.listing{
+		margin-top:0;
+		padding:0;
+		.block{
+			border-left:0;
+			border-right:0;
+			margin-bottom: 0;
+			border-bottom:0;
+			.medium-8 {
+	    		padding: 20px 40px 0 20px;
+	    		.read-more,.time{
+	    			margin-top:50px;
+	    		}
+			}
+		}
+	}
+	.listing h1{
+		font-size:80px;
+		margin-top: 50px;
+		margin-bottom: 70px;
+	}
+	.subpages{
+		.the-top.video .text-holder{
+			max-width:100%;
+		}
+		.share-block{
+			margin-top:60px;
+		}
+		.the-top{
+			padding-top:0;
+			overflow: hidden;
+			h1{
+				font-size: 90px;
+				line-height:80px;
+			}
+			p{
+				font-size: 24px;
+			    margin: 0 auto;
+			}
+		}
+		.article-btn{
+			margin:40px auto 50px auto;
+		}
+	}
+	.letters{
+		line-height:75px;
+	}
+	.page-wrap{
+		margin-left:0!important;
+	}
+	.page.not .cover-me{
+		width:80%;
+	}
+}
+
+/** Tablet Portrait **/
+@media screen and (max-width: 800px){
+	.subpages .video #Video{
+		height:300px!important;
+	}
+	#overlay .inner{
+		margin-left: -150px;
+	    margin-top: -40px;
+	    width: 300px;
+	}
+	.page.not .cover-me{
+		width:100%;
+	}
+	.home{
+		.BOSS{
+			width:175px;
+		}
+		.ibm-text{
+			width:75px;
+			right: 25px;
+		}
+	}
+	header .inside{
+		padding:0 25px;
+	    height: 64px;
+	    line-height: 64px;
+	}
+	.theWrap{
+		padding:20px;
+		&.listing{
+			padding:0;
+		}
+	}
+	.bm-burger-button{
+		right:25px;
+		top: 6px;
+	}
+	.arrow-wrap{
+		right: 28px;
+	}
+	.subpages #wide .video-title{
+		font-size: 50px;
+		left:20px;
+		top:50px;
+	}
+}
+
+/** Mobile **/
+@media screen and (max-width: 640px){
+	.subpages .TwoImageOneQuote .the-caption{
+		width:100%!important;
+	}
+	.the-home{
+		height: auto!important;
+    	overflow: visible!important;
+	}
+	.hide{
+		background-image: url(http://specialedition.afr.com/wp-content/uploads/2017/08/IMB-image-Hero-768x696.jpg);
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-size: contain;
+	    height: 250px;
+	    width: 100%;
+	    clear: both;
+		> *{
+			display: none;
+		}
+	}
+	.the-bottom {
+	    left: 0;
+	    position: relative;
+	    margin-top: -50px;
+	    bottom: auto;
+	}
+	.subpages {
+		.the-top .cover-me{
+			height: 100%!important;
+		    width: 100%;
+		    position: absolute;
+		}
+	}
+	.home{
+		.BOSS{
+			width:150px;
+		}
+		.ibm-text{
+			right: 0;
+			position: relative;
+			float: right;
+			top: 46px;
+		}
+		.brain{
+			clear:both;
+			img{
+				display: block;
+				margin:0 auto;
+    			padding-top: 20px;
+			}
+		}
+		.letters{
+			font-size:70px;
+		}
+		.under{
+			font-size:23px;
+			margin-top:15px;
+		    max-width: 90%;
+		    margin-left: 5%;
+		}
+	}
+	.arrow-wrap{
+		right: 28px;
+	}
+	header .inside{
+		padding:0 15px;
+	}
+	.bm-burger-button{
+	    right: 20px;
+
+	}
+	.block-wrap{
+		.image-wrap{
+			display: none;
+		}
+	}
+	.listing {
+		h1{
+			font-size: 60px;
+    		line-height: 55px;
+		}
+		.block {
+			.medium-8 {
+		    	padding: 30px 30px 30px 30px;
+				.page-number{
+					font-size: 30px;
+				}
+				.the-title {
+				    font-size: 35px;
+				}
+				.time, .read-more{
+					font-size: 20px;
+				    display: block;
+				    clear: both;
+				    margin-top: 20px;
+				    float: left;
+				    margin-bottom: 3px;				
+				}
+				&.small-4{
+					position: relative;
+				    bottom: 0;
+				    float: left;
+				}
+			}
+		}
+	}
+	body.menu-open .bm-menu.bm-menu-wrap{
+		width:calc(100% + 34px)!important;
+	}
+	header span.top{
+		font-size:15px;
+		span{
+			display: block;
+			float:left;
+		}
+	}
+	.no-mobile{
+		display: none!important;
+	}
+	.on-mobile{
+		display: block;
+	}
+	.subpages{
+		#wide .video-title {
+		    font-size: 40px;
+		    line-height: 35px;
+		}
+		.the-top{
+			height:auto!important;
+			&.video{ 
+				.cover-me{
+					height:auto!important;
+					position: relative;
+				}
+				.text-holder{
+					margin-top:0;
+					margin-bottom:30px;
+				}
+			}
+		}
+		.text-holder{
+		    top: 0;
+		    max-width: 90%;
+		    position: relative;
+		    left: 0;
+		    width: 100%;
+		    margin-top: 100%;
+		}
+		.the-top{ 
+			padding-bottom:0;
+			h1 {
+				font-size: 60px;
+				line-height: 50px;
+			}
+			p{
+				font-size:20px;
+				line-height: 26px;
+			}
+		}
+		.OneImageOneQuote,
+		.TwoImageOneQuote{
+			.component-responsive-image{
+				max-width:100%;
+				width: 100%;
+				float: none;
+				position: relative;
+				img{
+					width:100%;
+				}
+				&.second-image{
+					margin-top:50px!important;
+				}
+			}
+			.first-image{
+				display: none;
+			}
+			.quote-block {
+			    right: 0;
+			    text-align: center;
+			    top: 0;
+			    position: relative;
+			    width: 100%;
+			    float: left;
+			    padding: 20px;
+			    left: 0;
+			}
+			.parallax-inner{
+				transform: translate3d(0%, 0, 0px)!important;
+			}
+		}
+	}
+	.footer-block .top-strip .text-block h2 {
+	    font-size: 30px;
+	    max-width: 90%;
+	    margin: .83em auto;
+	}
+	.listing .block .medium-8{
+		padding:30px 15px;
+	}
+	.subpages {
+		.share-block {
+		    margin-top: 40px;
+		    margin-bottom: 40px;
+		}
+		.text-block{
+			padding-bottom:30px;
+		}
+		.OneImageOneQuote{
+			margin-bottom:0;
+		}
+		.TwoImageOneQuote .quote-block{
+			padding:0;
+		}
+	}
+	.subpages .Caption{
+		margin-bottom:30px;
+		padding-bottom: 0;
+	}
+	.subpages .outerVideo{
+		padding-bottom:0;
+	}
+	.subpages .video .outerVideo{
+		padding-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: 376px){
+	.home{
+		.letters{
+			font-size: 50px;
+    		line-height: 50px;
+		}
+	}
+	.subpages{
+		.share-block{
+			font-size:17px;
+		} 
+	}
+    .home .letters{
+	    font-size: 46px;
+	    line-height: 50px;
+	    }
+
+	.home .BOSS {
+	    width: 120px;
+	}
+
+	.ibm-text span{
+		font-size:11px;
+		margin-bottom:5px;
+	}
+
+	.home .under{
+		font-size:19px
+	}
+
+	.subpages .the-top .article-btn{
+		max-width:100%;
+	}
+
+	header{
+		z-index:99;
+	}
+}

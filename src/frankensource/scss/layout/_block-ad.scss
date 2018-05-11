@@ -1,0 +1,41 @@
+.block-ad {
+	position: relative;
+	.ad {
+		float: none;
+		position: relative;
+		margin: $grid-gutter-width/2 auto $grid-gutter-width*0.75;
+		max-width: $screen-lg;
+		z-index: 1;
+		@include media('>=screen-sm') {
+			margin: $grid-gutter-width auto $grid-gutter-width*1.5;
+		}
+		span{
+			font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+	}
+	.inner {
+		display: block;
+		box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.15);
+
+		img {
+			min-width: 100%;
+			width: auto;
+		}
+	}
+	.top-half, .bottom-half{
+		position: absolute;
+		left:0;
+		display: block;
+		width: 100%;
+	}
+	.top-half{
+		height:40%;
+	}
+	.bottom-half{
+		height:60%;
+		bottom:0;
+		@include media('<=screen-sm') {
+			margin-bottom:-1px; // 1px background line
+		}
+	}
+}

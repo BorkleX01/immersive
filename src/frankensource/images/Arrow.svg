@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="3603.417 694.5 20.359 19.921">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="Arrow" transform="translate(3594.917 686)">
+    <path id="Path_1" data-name="Path 1" class="cls-1" d="M27.359,57l-8.68,8.68L10,57" transform="translate(0 -38.759)"/>
+    <line id="Line_1" data-name="Line 1" class="cls-1" y2="16.921" transform="translate(18.68 10)"/>
+  </g>
+</svg>

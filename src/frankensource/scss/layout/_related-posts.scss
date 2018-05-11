@@ -1,0 +1,111 @@
+.related-posts {
+	padding: 0;
+
+	&-title {
+		max-width: 680px;
+		margin: 0 $grid-gutter-width/2 $grid-gutter-width*1.5;
+		@include media('>=screen-sm') {
+			margin: $grid-gutter-width/2 auto;
+		}
+		h2 {
+			border-top: 1px solid $gray-lighter;
+			padding: $grid-gutter-width/2 0;
+			margin: 0;
+			border-bottom: 1px solid $gray-lighter;
+			font-size: 2.5rem;
+		}
+	}
+
+	&-inner {
+		position: relative;
+
+		.carousel {
+			position: static;
+			margin: $grid-gutter-width/2 0 $grid-gutter-width*0.75;
+		
+			@include media('>=screen-sm') {
+				margin: $grid-gutter-width $grid-gutter-width*2 $grid-gutter-width/4;
+
+				&.single {
+					margin: $grid-gutter-width auto $grid-gutter-width/4;
+					max-width: 680px;
+				}
+			}
+
+			@include media('>screen-lg') {
+				&.slide-count-2 {
+					margin: $grid-gutter-width auto $grid-gutter-width/4;
+					max-width: 1160px;
+				}
+			}
+		}
+		.carousel-controls{
+			.carousel-next{
+				right:26px;
+			}	
+			.carousel-prev{
+				left:26px;
+			}
+		}
+	}
+
+	&-post {
+		padding: 0;
+		margin: 0;
+		height: 400px;
+		position: relative;
+		overflow: hidden;
+		background-color: $gray;
+		display: flex;
+		justify-content: stretch;
+		color: $white;
+		@include media('>=screen-sm') {
+			height: 320px;
+		}
+
+		.overlay-bg {
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			transform: scale(1.1);
+			filter: blur($grid-gutter-width/8);
+		}
+
+		.overlay {
+			position: relative;
+			z-index: 1;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			padding: 0 $grid-gutter-width;
+			text-align: center;
+			background: rgba(0,0,0,0.5);
+
+			@include media('>=screen-sm') {
+				align-items: flex-start;
+				padding: 0 $grid-gutter-width*1.5;
+				text-align: left;
+			}
+		}
+
+		&.col-sm-12 .overlay {
+			align-items: center;
+		}
+
+		&.col-sm-4 .overlay,
+		&.col-sm-3 .overlay {
+			padding: 0 $grid-gutter-width*1;
+		}
+
+		.h2 {
+			margin-bottom: $grid-gutter-width/2;
+		}
+	}
+}

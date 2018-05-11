@@ -1,0 +1,92 @@
+// Typography
+
+* {
+	font-size: 100.01%
+}
+
+html {
+	font-size: 106.3%;
+	@include media('>=screen-sm') {
+		font-size: 112.5%;
+	}
+}
+
+body,
+address {
+	font-size: 1em;
+	line-height: 1.647em;
+	@include media('>=screen-sm') {
+		line-height: 1.778em;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	a {
+		color: inherit;
+	}
+}
+
+a,
+button,
+input[type="submit"] {
+	@include transition;
+}
+
+a {
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+	&.default {
+		color: $gray-dark;
+		&:hover,
+		&:focus {
+			color: $brand-primary;
+		}
+	}
+}
+
+h1, .h1 {
+	@include efontsize(38, 42);
+	margin: 0 0 14px;
+	@include media('>=screen-sm') {
+		@include efontsize(48, 62, $base-sm);
+		margin: 0 0 20px;
+	}
+	@include media('>=screen-md') {
+		@include efontsize(68, 84, $base-sm);
+	}
+}
+
+h2, .h2 {
+	@include efontsize(28, 32);
+	margin: 0 0 27px;
+	letter-spacing: -.5px;
+	@include media('>=screen-sm') {
+		@include efontsize(30, 34, $base-sm);
+		margin: 0 0 38px;
+	}
+}
+
+h3, .h3 {
+	font: 700 #{(13/$base)+em}/#{(18/13)+em} $font-family-sans-serif;
+	margin: 0 0 12px;
+	letter-spacing: 1.5px;
+	@include media('>=screen-sm') {
+		@include efontsize(16, 20, $base-sm);
+		letter-spacing: 2px;
+		margin: 0 0 13px;
+	}
+}
+
+p {
+	margin: 0 0 24px;
+	@include media('>=screen-sm') {
+		margin: 0 0 32px;
+	}
+}

@@ -1,0 +1,77 @@
+/*
+Theme Name: TheSydneyMorningHerald
+Author: Anonymous
+Author URI:
+Version: 1
+Description: Base theme for Wordpress
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: base
+Tags: one-column, two-columns
+Theme URI:
+*/
+
+// devices viewport width starts at:
+$breakpoints: ( xs-phone: 320px, screen-xs: 480px, screen-sm: 768px, screen-md: 992px, screen-lg: 1280px);
+// keywords
+$media-expressions: ( 'screen': 'screen', 'print': 'print', 'handheld': 'handheld', 'landscape': '(orientation: landscape)', 'portrait': '(orientation: portrait)', 'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)', 'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)');
+
+/* ---------------------------------------------------------
+	 1. General reset & Wordpress reset
+	 2. Font icons
+   3. Typography
+   4. Common site styles
+   ---------------------------------------------------------*/
+
+@import 'scss/vendors/include-media'; 
+@import "scss/bootstrap-custom";
+@import "scss/vendors/bootstrap/variables";
+@import "scss/vendors/bootstrap/mixins";
+
+/* ---------------------------------------------------------
+   1. General reset & Wordpress reset
+   ---------------------------------------------------------*/
+
+@import 'scss/base/mixins';
+@import 'scss/base/helpers';
+@import "scss/base/wp-reset";
+@import "scss/base/base";
+@import "scss/base/buttons";
+
+/* ---------------------------------------------------------
+   2. Font icons
+   ---------------------------------------------------------*/
+
+@import "scss/base/icons";
+
+/* ---------------------------------------------------------
+   3. Typography
+   ---------------------------------------------------------*/
+
+@import "scss/base/typography";
+
+/* ---------------------------------------------------------
+   3. Content Block Styles
+   ---------------------------------------------------------*/
+
+@import "scss/layout/_block-common";
+@import "scss/layout/_block-image";
+@import "scss/layout/_block-video";
+@import "scss/layout/_block-ad";
+@import "scss/layout/_block-quiz";
+@import "scss/layout/_block-image-carousel";
+@import "scss/layout/_blocktwoimages";
+
+/* ---------------------------------------------------------
+   4. Common site styles
+   ---------------------------------------------------------*/
+
+@import "scss/layout/common";
+@import "scss/layout/loading";
+@import "scss/layout/related-posts";
+@import "scss/layout/side-panel";
+@import "scss/layout/carousel";
+@import "scss/layout/animated-arrow";
+@import "scss/layout/podcast_player";
+@import "scss/layout/quotes";
+
